@@ -1,1 +1,25 @@
+<main>
+    <section id="escolha-treino">
+        <h2>Selecione o Treino do Dia</h2>
+        <div id="lista-treinos">
+            </div>
+    </section>
 
+    <section id="execucao-treino" style="display:none;">
+        <h2 id="nome-treino-ativo"></h2>
+        <div id="lista-exercicios">
+            </div>
+        <button id="btn-finalizar-treino">Concluir Treino</button>
+    </section>
+</main>
+
+<template id="template-exercicio">
+    <div class="exercicio">
+        <h3 class="nome-exercicio"></h3>
+        <div class="series-container">
+            </div>
+        <button class="btn-add-serie">+</button>
+        <button class="btn-remove-serie">-</button>
+        <textarea placeholder="Observações..."></textarea>
+    </div>
+</template>
