@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard do Aluno</title>
+    </head>
+<body>
+    <header>
+        <h1>Bem-vindo, [Nome do Aluno]!</h1>
+    </header>
 
+    <main>
+        <section id="dica-do-dia">
+            <h2>Dica do Dia</h2>
+            <p id="texto-dica">Carregue no botão para uma nova dica!</p>
+            <button id="btn-gerar-dica">Gerar Dica</button>
+        </section>
+
+        <section id="calendario-treinos">
+            <h2>Desempenho Mensal</h2>
+            <div id="calendario"></div> </section>
+
+        <section id="classificacoes">
+            <div class="tabela">
+                <h3>Classificação (Pontos)</h3>
+                <table id="tabela-pontos">
+                    </table>
+            </div>
+            <div class="tabela">
+                <h3>Peso Total Levantado (Semana/Mês)</h3>
+                <table id="tabela-peso">
+                    </table>
+            </div>
+        </section>
+
+        <section id="grafico-evolucao">
+            <h2>Evolução do Peso Corporal</h2>
+            <div>
+                <button data-periodo="3">3 Meses</button>
+                <button data-periodo="6">6 Meses</button>
+                <button data-periodo="12">12 Meses</button>
+                <button data-periodo="all">Desde Sempre</button>
+            </div>
+            <canvas id="grafico-peso"></canvas> </section>
+
+        <section id="ultima-avaliacao">
+            <h2>Última Avaliação Física</h2>
+            <div id="dados-avaliacao">
+                </div>
+        </section>
+    </main>
+
+    </body>
+</html>
